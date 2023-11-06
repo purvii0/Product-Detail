@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main-image">
+          <img class="slide" src="img1.jpg" >
+        </div>
+          <div class="option flex">
+            <img src="img1.jpg" onclick="img('img1.jpg')">
+            <img src="img2.jpg" onclick="img('img2.jpg')">
+            <img src="img3.jpg" onclick="img('img3.jpg')">
+            <img src="img4.jpg" onclick="img('img4.jpg')">
+            <img src="img5.jpg" onclick="img('img5.jpg')">
+          </div>
+      </div>
+      <div class="right">
+        <h3>BenchBlend Modular Table</h3>
+        <h4><small>Rs.</small>15,999</h4>
+        <p>Saving space in tiny homes should be considered a sport.This multifuntional coffee table transfroms into a sitting bench and more furniture to save your space.</p>
+        <h5>Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+        <button>Add to Bag</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function img(anything){
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change){
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+
+
+
+  
+</body>
+</html>
